@@ -6,8 +6,7 @@ def sgd_update(X: np.ndarray, y: np.ndarray, weights: np.ndarray, learning_rate:
 
     Returns the final weight vector as a Python list.
     """
-    loss1=1000
-    best_weight=0
+    
     for i in range(n_iter):
         x=X[i%len(X)]
         y_i=y[i%len(y)]
